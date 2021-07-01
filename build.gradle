@@ -1,0 +1,11 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '5.2.0'
+}
+
+group 'site.alex_xu.dev.utils'
+version '1.0-SNAPSHOT'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: '*.jar')
+}
