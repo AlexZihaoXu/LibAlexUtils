@@ -3,7 +3,7 @@ package site.alex_xu.dev.utils;
 public class Size2f {
     public float width, height;
 
-    public Size2f(int width, int height) {
+    public Size2f(float width, float height) {
         this.width = width;
         this.height = height;
     }

@@ -17,8 +17,16 @@ public class FastMath {
         }
     }
 
-    public static float randRange(int begin, int end) {
-        return (float) (int) ((Math.random() * (begin - end)) + begin);
+    public static float toDeg(float radians) {
+        return (float) (radians * 180 / Math.PI);
+    }
+
+    public static float toRad(float degree) {
+        return (float) (degree * Math.PI / 180);
+    }
+
+    public static int randRange(int begin, int end) {
+        return (int) ((Math.random() * (end - begin)) + begin);
     }
 
     public static float cos(float angle) {
