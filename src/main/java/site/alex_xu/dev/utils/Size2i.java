@@ -18,6 +18,10 @@ public class Size2i {
         this.height = (int) size.height;
     }
 
+    public Size2i copy() {
+        return new Size2i(this.width, this.height);
+    }
+
     public Vec2D toVec2D() {
         return new Vec2D(this.width, this.height);
     }
